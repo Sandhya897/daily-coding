@@ -1,0 +1,15 @@
+''' find the even number of digits'''
+class Solution:
+    def findNumbers(self, nums: List[int]) -> int:
+        d=[]
+        c=0
+       ''' for i in nums:
+            d.append([int(j) for j in str(i)])
+        for i in d:
+            if len(i)%2==0:
+                c=c+1
+        return c'''
+        for i in nums:
+            if len(str(i))%2==0:
+                c=c+1
+        return c
