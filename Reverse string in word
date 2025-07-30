@@ -1,0 +1,9 @@
+def reverse_words_in_string(s):
+    words = s.split()  # Split the string by spaces
+    reversed_words = [word[::-1] for word in words]  # Reverse each word
+    return ' '.join(reversed_words)  # Join them back with spaces
+
+# Example usage:
+input_str = "Hello World"
+output = reverse_words_in_string(input_str)
+print(output)  # Output: olleH dlroW
